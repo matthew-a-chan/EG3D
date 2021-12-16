@@ -72,10 +72,14 @@
     <div class="n-article">
         <!-- teaser -->
         <div class="l-article video youtube-embed">
-            <iframe class="l-article youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/~~~"
+            <!-- <iframe class="l-article youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/~~~"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> -->
+            <video controls="" loop="" width="100%">
+                <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+                <source src="media/overview_compressed.mp4#t=0.001" type="video/mp4" />
+            </video>
         </div>
         <!-- abstract -->
         <h2 id="abstract"> Abstract </h2>
@@ -134,7 +138,8 @@
         <div class="l-article video">
             <video controls="" loop="" width="100%">
                 <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
-                <source src="media/qualitative_results/qualitative_results_shape_compressed.mp4#t=0.001" type="video/mp4" />
+                <source src="media/qualitative_results/qualitative_results_shape_compressed.mp4#t=0.001"
+                    type="video/mp4" />
             </video>
             <div class="videocaption">
                 <div>
@@ -302,9 +307,7 @@
         <p>
         <h3>Additional Visual Results</h3>
         </p>
-        <p>
-            We include additional results in the following video.
-        </p>
+        <p> We include additional results in the following video. </p>
         <div class="l-article video">
             <video controls="" loop="" muted width="100%">
                 <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
@@ -312,7 +315,8 @@
             </video>
             <div class="videocaption">
                 <div>
-                    <strong> Video 8: </strong> Additional sequences of interpolation within FFHQ and static scenes of FFHQ and AFHQv2.
+                    <strong> Video 8: </strong> Additional sequences of interpolation within FFHQ and static scenes of
+                    FFHQ and AFHQv2.
                 </div>
             </div>
         </div>
